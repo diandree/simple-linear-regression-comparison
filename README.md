@@ -8,14 +8,14 @@ This predictive modeling task is relevant in various sectors such as human resou
 
 ## 3. Dataset
 
-![Dataset snapshot](.\assets\about-dataset.PNG "Dataset snapshot")
+![about-dataset](https://github.com/diandree/simple-linear-regression-comparison/assets/37777059/963c04ef-7378-4bc4-ad8f-695ff31b0f62)
 
 
 The dataset consists of historical records where each entry includes:
 * YearsExperience: This is a continuous numerical variable representing the number of years of professional experience.
 * Salary: This is the target variable, representing the actual salary earned by individuals corresponding to their years of experience.
 
-You can find this dataset on [Kaggle](https://www.kaggle.com/datasets/karthickveerakumar/salary-data-simple-linear-regression)
+You can find this dataset on [Kaggle](https://www.kaggle.com/datasets/karthickveerakumar/salary-data-simple-linear-regression).
 
 ## 4. Methodology
 
@@ -48,14 +48,13 @@ $$\begin{align*} \text{repeat}&\text{ until convergence:} \; \lbrace \newline
 \;  w &= w -  \alpha \frac{\partial J(w,b)}{\partial w} \tag{4}  \; \newline 
  b &= b -  \alpha \frac{\partial J(w,b)}{\partial b}  \newline \rbrace
 \end{align*}$$
+
 where, parameters $w$, $b$ are updated simultaneously.  
+
 The gradient is defined as:
-$$
-\begin{align}
-\frac{\partial J(w,b)}{\partial w}  &= \frac{1}{m} \sum\limits_{i = 0}^{m-1} (f_{w,b}(x^{(i)}) - y^{(i)})x^{(i)} \tag{5}\\
-  \frac{\partial J(w,b)}{\partial b}  &= \frac{1}{m} \sum\limits_{i = 0}^{m-1} (f_{w,b}(x^{(i)}) - y^{(i)}) \tag{6}\\
-\end{align}
-$$
+
+![gd](https://github.com/diandree/simple-linear-regression-comparison/assets/37777059/e1c07d3f-a2ce-49cb-8757-d36dd9be933c)
+
 
 Here *simultaniously* means that you calculate the partial derivatives for all the parameters before updating any of the parameters.
 
@@ -64,7 +63,7 @@ Here *simultaniously* means that you calculate the partial derivatives for all t
 Implementing gradient descent algorithm for one feature. We will need the following functions: 
 - `compute_cost` implements equation (2)
 - `compute_gradient` implements equation (5) and (6) above
-- `score`: implements equation (2)
+- `score`: implements equation (3)
 - `gradient_descent`, implements equation (4)
 
 *Note: Since we have a limited dataset, we are going to use a resampling procedure called cross-validation. This procedure has a single parameter called k, which refers to the number of groups into which a given data sample is to be split. As such, the procedure is often called k-fold cross-validation.*
