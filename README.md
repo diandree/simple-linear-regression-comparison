@@ -31,8 +31,18 @@ This problem will be addressed using two different methods:
 * Scikit-learn (Sklearn): A machine learning library that provides simple and efficient tools for data analysis and machine learning tasks.
 
 
+# 1. Implementing a Simple Linear Regression from Scratch
 
-## 1. Gradient descent summary
+## 1.1 Brief explanation
+
+* A Linear Regression is a supervised machine learning algorithm, which means we feed our model with examples that include the right answers.
+
+* Regression predicts a number from infinitely many possible numbers.
+
+* For this dataset, we will implement a Simple Linear Regression because we only have one feature in our dataset. Thus, the model will fit a straight line to the data.
+
+
+## 1.2 Gradient descent summary
 A linear model that predicts $f_{w,b}(x^{(i)})$:
 $$f_{w,b}(x^{(i)}) = wx^{(i)} + b \tag{1}$$
 In linear regression, we utilize input training data to fit the parameters $w$,$b$ by minimizing a measure of the error between our predictions $f_{w,b}(x^{(i)})$ and the actual data $y^{(i)}$. The measure is called the $cost$, $J(w,b)$. In training you measure the cost over all of our training samples $x^{(i)},y^{(i)}$
@@ -58,7 +68,7 @@ The gradient is defined as:
 
 Here *simultaniously* means that you calculate the partial derivatives for all the parameters before updating any of the parameters.
 
-## 1.2 Gradient Descent Implementation
+## 1.3 Gradient Descent Implementation
 
 Implementing gradient descent algorithm for one feature. We will need the following functions: 
 - `compute_cost` implements equation (2)
