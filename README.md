@@ -8,7 +8,7 @@ This predictive modeling task is relevant in various sectors such as human resou
 
 ## 3. Dataset
 
-![Dataset snapshot](.\assets\about-dataset.PNG "Dataset snapshot")
+![about-dataset](https://github.com/diandree/simple-linear-regression-comparison/assets/37777059/963c04ef-7378-4bc4-ad8f-695ff31b0f62)
 
 
 The dataset consists of historical records where each entry includes:
