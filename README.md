@@ -66,7 +66,7 @@ The gradient is defined as:
 ![gd](https://github.com/diandree/simple-linear-regression-comparison/assets/37777059/e1c07d3f-a2ce-49cb-8757-d36dd9be933c)
 
 
-Here *simultaniously* means that you calculate the partial derivatives for all the parameters before updating any of the parameters.
+Here *simultaneously* means that you calculate the partial derivatives for all the parameters before updating any of the parameters.
 
 ## 1.3 Gradient Descent Implementation
 
