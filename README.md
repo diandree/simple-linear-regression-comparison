@@ -75,3 +75,5 @@ Implementing gradient descent algorithm for one feature. We will need the follow
 - `compute_gradient` implements equation (5) and (6) above
 - `score`: implements equation (3)
 - `gradient_descent`, implements equation (4)
+  
+*Note: Since we have a limited dataset, we are going to use a resampling procedure called cross-validation. This procedure has a single parameter called k, which refers to the number of groups into which a given data sample is to be split. As such, the procedure is often called k-fold cross-validation.*
