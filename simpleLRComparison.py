@@ -96,10 +96,6 @@ def gradient_descent(X, y, w_in, b_in, alpha, num_iters):
         b -= (alpha * dj_db)             
 
         # Save cost J at each iteration during training
-        '''
-            Note: In this case, we will not interact with the cost values obtained during training,
-            but it is important to track these cost values to evaluate the model's performance.
-        '''
         if i < num_iters: #Prevent resource exhaustion 
             J_hist.append(compute_cost(X, y, w, b)) 
 
